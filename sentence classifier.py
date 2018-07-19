@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 from time import time
 from datetime import timedelta
 import numpy as np
@@ -146,7 +147,11 @@ class SentenceClassifier:
         :return: A dictionary with key as word and value as vectors.
         """
         embeddings_index = {}
-        f = open(os.path.join(self.EMBED_DIR, 'glove.6B.100d.txt'), encoding='utf-8')
+        try:
+        	f = open(os.path.join(self.EMBED_DIR, 'glove.6B.100d.txt'), encoding='utf-8')
+        except FileNotFoundError:
+        	print("GloVe vectors missing. You can download from http://nlp.stanford.edu/data/glove.6B.zip")
+        	sys.exit()
         for line in f:
             values = line.rstrip().rsplit(' ')
             word = values[0]

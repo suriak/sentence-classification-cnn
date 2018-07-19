@@ -6,3 +6,4 @@ The implementaion is experimented with TREC data set using [*GloVe pre-trained v
 ### Acknowledgments:
 1. Yoon Kim - https://github.com/yoonkim/CNN_sentence
 2. Denny Britz - https://github.com/dennybritz/cnn-text-classification-tf
+3. Jason Brownlee - https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
