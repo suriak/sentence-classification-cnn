@@ -3,6 +3,9 @@ This project implements the method proposed by Yoon Kim for sentence classificat
 
 The implementaion is experimented with TREC data set using [*GloVe pre-trained vectors*](http://nlp.stanford.edu/data/glove.6B.zip). Here, the attempt is to implement the *CNN-static* version explained in the paper with some changes to the hyper-parameters.
 
+### Implementation Note:
+* GloVe embedding file is available [here](https://nlp.stanford.edu/data/glove.6B.zip) and should be kept inside `embeddings` folder.
+
 ### Acknowledgments:
 1. Yoon Kim - https://github.com/yoonkim/CNN_sentence
 2. Denny Britz - https://github.com/dennybritz/cnn-text-classification-tf
